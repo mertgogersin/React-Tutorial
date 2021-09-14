@@ -41,9 +41,7 @@ function Menu() {
                             const isHigher = item.price>8;
                             return (<div key={key}>
                             <h4>{item.name}</h4>
-                            {isHigher ? (<p className="w3-text-grey" style={style}>{item.description} {item.price}</p>):
-                             (<p className="w3-text-grey">{item.description} {item.price}</p>)}
-                                
+                            <p className="w3-text-grey" style={isHigher ? {style} :{color:'#757575'} }>{item.description} {item.price}</p>                                                         
                                 <br />
                             </div>)
                         })
