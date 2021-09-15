@@ -20,7 +20,7 @@ function Customers() {
                         setCustomers(data);
                         setLoading(false);
                         console.log(loading);
-                    }, 1000);
+                    }, 500);
                 
             })
     }
